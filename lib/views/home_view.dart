@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/views/calculator_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Container(
-        color: Colors.yellow,
-        child: const Center(child: Text(
-          "Hello World",
-          style: TextStyle(
-            fontSize: 40,
-            color: Colors.black,
-            fontWeight: FontWeight.bold,
-          ),
-          )),
-      )
+    return const Scaffold(
+      backgroundColor: Colors.deepOrange,
+      body: SafeArea(
+            child: CalculatorView(),
+        ),
       );
   }
 }
